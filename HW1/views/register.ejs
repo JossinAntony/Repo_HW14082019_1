@@ -30,21 +30,21 @@
 <!-- Register fields-->
     <div class="container">
         <div class="row">
-            <div class="col col-12 col-sm-2"></div>
-            <div class="col col-12 col-sm-8">
+            <div class="col col-12 col-sm-2"></div>                                                          <!--Display area 1-->
+            <div class="col col-12 col-sm-8">                                                                <!--Display area 2-->
                 <br><br><br><br>
                 <h1 class="text-center">REGISTER</h1>
                 <table class="table">
-                    <tr>
+                    <tr>                                                                                     <!--Name field-->
                         <td><h5 class="text-center">Name:</h5></td>
                         <td><input type="text" class="form-control"></td>
                     </tr>
-                    <tr>
+                    <tr>                                                                                     <!--Address field-->
                         <td><h5 class="text-center">Address:</h5></td>
                         <td><textarea name="" id="" cols="100" rows="4"></textarea></td>
                     </tr>
                     <tr>
-                        <td><h5 class="text-center">Gender:</h5></td>
+                        <td><h5 class="text-center">Gender:</h5></td>                               	    <!--Gender Radio button field(www.w3schools.com/bootstrap4/bootstrap_forms_custom.asp)-->
                         <td>
                             <div class="custom-control custom-radio custom-control-inline">
                                 <input type="radio" class="custom-control-input" id="male" name="gender">
@@ -60,9 +60,36 @@
                             </div>
                         </td>
                     </tr>
+                    <tr>
+                        <td><h5 class="text-center">District:</h5></td>         <!--https://www.w3schools.com/bootstrap4/bootstrap_forms_custom.asp-->
+                        <td>
+                            <form>
+                                <select name="districts" class="custom-select">
+                                    <option selected>Select</option>
+                                    <option value="tvm">Thiruvananthapuram</option>
+                                    <option value="klm">Kollam</option>
+                                    <option value="alp">Alappuzha</option>
+                                    <option value="pth">Pathanamthitta</option>
+                                    <option value="ktm">Kottayam</option>
+                                    <option value="idk">Idukki</option>
+                                    <option value="ekm">Ernakulam</option>
+                                    <option value="tsr">Thrissur</option>
+                                    <option value="pkd">Palakkad</option>
+                                    <option value="mlp">Malappuram</option>
+                                    <option value="kzk">Kozhikode</option>
+                                    <option value="wyn">Wayanadu</option>
+                                    <option value="knr">Kannur</option>
+                                    <option value="ksr">Kasaragod</option>
+                                </select>
+                            </form>
+                        </td>
+                    </tr>
                 </table>
             </div>
+<!-- --------------- -->
+<!--Display area 3-->
             <div class="col col-12 col-sm-2"></div>
+<!-- --------------- -->
         </div>
     </div>
 <!-- ---------------------------------------------------------- -->
