@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .card{
+             min-height: 300px;
+        }
+    </style>
     <title>Library</title>
 </head>
 <body>
@@ -22,6 +27,30 @@
                 </li>
             </ul>
     </nav>
-    <h1>This is Library</h1>
+
+    <div class="container">
+        <br><br><br><br>
+        <h1 class="text-center">Library</h1>
+        <div class="row justify-content-md-center">
+            <div class="card-columns p-5">
+                <% for(var i=0; i < library.length; i++){ %>
+                    <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title"><%= library[i].Title %></h5>
+                                <p class="card-text"><%= library[i].Author %></p>
+                                <p class="card-text"><%= library[i].Publisher %></p>
+                                <p class="card-text"><%= library[i].Year %></p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                    </div>
+                <% } %>
+            </div>  
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 </html>
