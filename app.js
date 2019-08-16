@@ -4,6 +4,10 @@ var app = new Express();                                                    //2.
 
 app.set('view engine','ejs');                                               //5. set up view engine
 
+app.get('/',(req,res)=>{
+    res.render('home');
+});
+
 app.get('/home',(req,res)=>{
     res.render('home');
 });
