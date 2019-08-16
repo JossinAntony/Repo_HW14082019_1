@@ -16,6 +16,10 @@ app.get('/register', (req,res)=>{
     res.render('register');
 });
 
-app.listen(3000,()=>{                                                       //3. set up listener
-    console.log("server running at http://localhost:3000");                 //4. display message when server runs
+//app.listen(3000,()=>{                                                       //3. set up listener
+    //console.log("server running at http://localhost:3000");                 //4. display message when server runs
+//});
+
+app.listen(process.env.PORT || 3000,()=>{
+    console.log('Server running at http://localhost:3000/')
 });
