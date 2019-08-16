@@ -1,0 +1,22 @@
+{
+  "name": "hw14082019_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JossinAntony/Repo_HW14082019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JossinAntony/Repo_HW14082019/issues"
+  },
+  "homepage": "https://github.com/JossinAntony/Repo_HW14082019#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
