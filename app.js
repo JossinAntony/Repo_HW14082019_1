@@ -4,6 +4,9 @@ var app = new Express();                                                    //2.
 
 app.set('view engine','ejs');                                               //5. set up view engine
 
+app.set('view engine', 'ejs');
+app.use(Express.static(__dirname+"/public"));
+
 app.get('/',(req,res)=>{
     res.render('home');
 });
